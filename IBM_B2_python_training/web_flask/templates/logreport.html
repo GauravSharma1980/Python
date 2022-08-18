@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to mywebsite</title>
+</head>
+<body>
+<h1>TextLogo</h1>
+
+<hr>
+
+<nav>
+<a href="/">Home</a>|
+<a href="/about">About</a>|
+<a href="/login">Login</a>|
+<a href="/weatherapi">Weather API</a>|
+</nav>
+
+<hr>
+
+<h1>Log Report</h1>
+
+<!--1-way to display-->
+<!------------------------------>
+<h2>Log Report Display Style - 1</h2>
+<hr>
+{{my_data}}
+<hr>
+<!------------------------------>
+
+<!--2nd-way to display-->
+<!------------------------------>
+<h2>Log Report Display Style - 2</h2>
+<hr>
+<table border="1">
+
+    {% for i, j, k, l in my_data : %}
+    <tr>
+        <td>{{i}}</td>
+        <td>{{j}}</td>
+        <td>{{k}}</td>
+        <td>{{l}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+<hr>
+<!------------------------------>
+
+<!--3rd-way to display-->
+<!------------------------------>
+<h2>Log Report Display Style - 3</h2>
+<hr>
+<table border="1" bgcolor="green">
+
+    {% for i, j, k, l in my_data : %}
+    {% if k == 'No Image' : %}
+    <tr bgcolor="yellow">
+        <td>{{i}}</td>
+        <td>{{j}}</td>
+        <td bgcolor="red">{{k}}</td>
+        <td>{{l}}</td>
+    </tr>
+    {% else: %}
+    <tr>
+        <td>{{i}}</td>
+        <td>{{j}}</td>
+        <td>{{k}}</td>
+        <td>{{l}}</td>
+    </tr>
+    {% endif %}
+
+    {% endfor %}
+
+</table>
+<hr>
+<br>
+<br>
+<!------------------------------>
+
+</body>
+</html>

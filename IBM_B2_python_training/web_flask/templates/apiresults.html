@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to mywebsite</title>
+</head>
+<body>
+<h1>TextLogo</h1>
+
+<hr>
+
+<nav>
+<a href="/">Home</a>|
+<a href="/about">About</a>|
+<a href="/login">Login</a>|
+<a href="/weatherapi">Weather API</a>|
+</nav>
+
+<hr>
+
+<h1>Weather Report</h1>
+
+<!--1-way to display-->
+<!------------------------------>
+<h2>Weather Report Display Style - 1</h2>
+<hr>
+{{my_weather_data}}
+<hr>
+<!------------------------------>
+
+<!--2nd-way to display-->
+<!------------------------------>
+<h2>Weather Report Display Style - 2</h2>
+<hr>
+<table border="1">
+
+    {% for each_item in my_weather_data.items() : %}
+    <tr>
+        <td>{{each_item[0]}}</td>
+        <td>{{each_item[1]}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+<hr>
+<!------------------------------>
+
+
+
+</body>
+</html>
