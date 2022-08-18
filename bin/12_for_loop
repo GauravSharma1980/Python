@@ -1,0 +1,53 @@
+"""
+for loop : To iterate ny collection like str, list, tuple, dict etc
+"""
+
+print("print each character without using for loop")
+print("-"*20)
+# -------------------
+
+my_string = "Python"
+print("my_string : ", my_string)
+
+print("Each char : ", my_string[0])
+print("Each char : ", my_string[1])
+print("Each char : ", my_string[2])
+print("Each char : ", my_string[3])
+print("Each char : ", my_string[4])
+print("Each char : ", my_string[5])
+
+print("#"*40)
+#####################
+
+my_string = "Python"
+print("my_string : ", my_string)
+
+for str in my_string:
+    print("from loop",str)
+
+
+print("#"*40)
+#####################
+
+# reverse string...
+
+for str in range(0,len(my_string)):
+    print("from ranger loop",my_string[str])
+
+print("#"*40)
+#####################
+
+for str in range(len(my_string)-1,-1,-1):
+    print("from ranger loop",my_string[str])
+
+print("#"*40)
+
+
+# -------------------
+# list(range(10))
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# list(range(2,10))
+# [2, 3, 4, 5, 6, 7, 8, 9]
+# list(range(2,10,2))
+# [2, 4, 6, 8]
+# -------------------

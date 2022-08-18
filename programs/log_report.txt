@@ -1,0 +1,7 @@
+IP	DATE	PICS	URL
+123.123.123.123	[26/Apr/2000:00:23:48	wpaper.gif 	http://www.jafsoft.com/asctortf/
+123.123.123.123	[26/Apr/2000:00:23:47	 	http://search.netscape.com/Computers/Data_Formats/Document/Text/RTF
+123.123.123.123	[26/Apr/2000:00:23:48	5star2000.gif 	http://www.jafsoft.com/asctortf/
+123.123.123.123	[26/Apr/2000:00:23:50	5star.gif 	http://www.jafsoft.com/asctortf/
+123.123.123.123	[26/Apr/2000:00:23:51	a2hlogo.jpg 	http://www.jafsoft.com/asctortf/
+123.123.123.123	[26/Apr/2000:00:23:51	newcount?jafsof3&width=4&font=digital&noshow 	http://www.jafsoft.com/asctortf/
